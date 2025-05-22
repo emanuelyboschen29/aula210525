@@ -27,7 +27,7 @@
     <div>
         <button onclick="iniciar()" id=" btIniciar">Iniciar</button>
         <button onclick="pausar()" id=" btPausar">Pausar</button>
-        <button onabort="zerar()" id="btZerar">Zerar</button>
+        <button onclick="zerar()" id="btZerar">Zerar</button>
     </div>
     <script>
         let segundos = 0;
@@ -51,6 +51,20 @@
                     atualizarCronometro();
                 }, 1000);
             }
+        }
+
+        function pausar() {
+            if(intervalo) {
+                clearInterval (intervalo);
+                intervalo = null;
+            }
+        }
+
+        function zerar() {
+            pausar();
+            segundos= 0;
+            atualizarCronometro();
+
         }
     </script>
 
