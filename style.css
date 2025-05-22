@@ -4,13 +4,13 @@
 body {
     font-family: "Dancing Script", cursive;
     text-align: center;
-    background-color: rgb(116, 106, 155);
+    background-color: rgb(181, 171, 224);
 }
 
 .bloco {
     width: 700px;
     height: 500px;
-    background-color: rgb(157, 128, 204);
+    background-color: rgb(131, 93, 192);
     position: absolute;
     top: 50%;
     left: 50%;  
